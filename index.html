@@ -132,9 +132,9 @@ fbq('init','1531010824997770');fbq('track','PageView');
   <h1>Ensemble pour des cabinets médicaux<br>et des cliniques <em>bien organisés</em></h1>
   <p class="hero-desc">Logiciel complet, simple et sans abonnement mensuel. Conçu pour les médecins algériens.</p>
   <div class="hero-btns">
-    <a href="#commander" class="btn-white">🛒 Commander</a>
+    <a href="https://youtu.be/dNWaYtpqUvo?si=1zchKNszNecHI6y5" target="_blank" class="btn-white">▶️ Vidéo démo</a>
     <a href="https://www.mediafire.com/file/g9hvr39jz35zpee/ANTIC+G-CAB+V2.9.rar/file" target="_blank" class="btn-outline">⬇️ Essai gratuit</a>
-    <a href="https://youtu.be/dNWaYtpqUvo?si=1zchKNszNecHI6y5" target="_blank" class="btn-outline">▶️ Vidéo démo</a>
+    <a href="#commander" class="btn-outline">🛒 Commander</a>
   </div>
   <!-- SLIDER A B C -->
   <div class="slider-wrap">
@@ -222,16 +222,6 @@ fbq('init','1531010824997770');fbq('track','PageView');
             </div>
           </div>
           <div class="option-price">4 500 DA</div>
-        </div>
-        <div class="option-item" id="opt-suivi" onclick="toggleOption('suivi',12000)">
-          <div class="option-left">
-            <div class="option-check" id="check-suivi"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div>
-              <div class="option-name">Application de suivi</div>
-              <div class="option-desc">Suivi mobile patients</div>
-            </div>
-          </div>
-          <div class="option-price">12 000 DA</div>
         </div>
         <div class="option-item selected" id="opt-sav" style="opacity:0.7;cursor:default;">
           <div class="option-left">
@@ -323,7 +313,7 @@ addSwipe(document.getElementById('heroSlider'),d=>heroGo(Math.max(0,Math.min(2,h
 addSwipe(document.getElementById('avisSlider'),d=>avisGo(Math.max(0,Math.min(2,avisIdx+d))));
 
 // OPTIONS & TOTAL
-const prices = {medecin:25000,assistante:12000,ordonnance:4500,suivi:12000};
+const prices = {medecin:25000,assistante:12000,ordonnance:4500};
 const selected = {medecin:25000};
 
 function toggleOption(key, price){
